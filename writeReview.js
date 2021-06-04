@@ -26,7 +26,7 @@ function previewFiles() {
   function readAndPreview(file) {
 
     // Make sure `file.name` matches our extensions criteria
-    if ( /\.(jpe?g|png|gif)$/i.test(file.name) ) {
+    if ( /\.(jpe?g|png|gif|heic|raw|tif?f)$/i.test(file.name) ) {
       var reader = new FileReader();
 
       reader.addEventListener("load", function () {
